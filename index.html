@@ -1,0 +1,46 @@
+<!--Créer un formulaire demandant le nom, le prénom, la date de naissance, le lieu de naissance, l'emploi et la société. Créer un bouton "Générer" permettant de créer une courte phrase de présentation.
+Exemple : Si les données saisies sont : "Jérôme OTT, 5/06/1990, Margny-lès-Compiègne, Formateur, Novei", la phrase de présentation sera : "Jérôme OTT, né le 5/06/1990 à Margny-lès-Compiègne, actuellement Formateur à Novei-->
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/Ex4jQ.css">
+		<title>jQ Part 4 Exercice 4</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1>jQuerry</h1>
+			<h2>Partie 4 - Exercice 4</h2>
+			<form>
+				<div class="col">
+					<label for="name">Nom : </label><input type="text" name="name" id="name" placeholder="Nom">
+					<span id="nameError"></span>
+				</div>
+				<div class="col">
+					<label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom">
+					<span id="firstNameError"></span>
+				</div>
+				<div class="col">
+					<label for="birthDate">Date de naissance : </label><input type="text" name="birthDate" id="birthDate" placeholder="JJ/MM/AAAA">
+					<span id="birthDateError"></span>
+				</div>
+				<div class="col">
+					<label for="birthPlace">Lieu de naissance : </label><input type="text" name="birthPlace" id="birthPlace" placeholder="Lieu de naissance">
+					<span id="birthPlaceError"></span>
+				</div>
+				<div class="col">
+					<label for="job">Emploi : </label><input type="text" name="job" id="job" placeholder="Emploi">
+					<span id="jobError"></span>
+				</div>
+				<div class="col">
+					<label for="company">Société : </label><input type="text" name="company" id="company" placeholder="Société">
+					<span id="companyError"></span>
+				</div>
+			</form>
+			<button id="generate" class="button">Générer</button>
+			<div id="message"></div>
+		<script src="assets/js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="assets/js/Ex4jQ.js"></script>
+	</body>
+</html>
